@@ -55,6 +55,7 @@
 }
 
 /* -----------------------LANDING---------------------------- */
+
 .landing-detail{
   height: 100vh;
   width: 100%;
@@ -115,5 +116,6 @@
   height: 100%;
   width: 100%;
   opacity: 70%;
-  background-color: #f0d8b6;  
+  background-color: #f0d2b6;  
 }
+

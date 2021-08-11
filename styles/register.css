@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #E8E4D9; */
+}
+
+/* -----------------------NAV BAR ---------------------------- */
+.navbar {
+  position: fixed;
+  background-color: #fffcf2;
+  width: 100vw;
+  height: 50px;
+  z-index: 1000;
+}
+.navbar-links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 60px;
+  background-color: #fffcf2;
+  cursor: pointer;
+  /* border-radius: 10px; */
+}
+.navbar-link a {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-decoration:none;
+  color: #403d39;
+  background-color: fffcf2;
+
+}
+.navbar-link a:hover{
+  background-color:#403d39 ;
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar-links.active {
+  top: 0;
+  left: 0;
+  position: fixed;
+  color: black;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+/* -----------------------LANDING---------------------------- */
+.login-detail{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+
+}
+.login-detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  gap: 20px;
+}
+.login-detail-content h2, h3 {
+   color: #a4a4a4;
+   /* border-color: rgb(207, 169, 97); */
+}
+.login-detail-content h2{
+  font-size: 60px;
+}
+
+.login-detail-image img {
+  /* padding-top: 20px; */
+  position: absolute;
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.login-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 70%;
+  background-color: #f0d8b6;  
+}
+.login-form-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  color: #a4a4a4;
+
+}
+.login-form-container form input{
+  padding: 10px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 4px;
+  background-color: #c2c1c1;
+  color: #403d39;
+}
+.login-form-container form button {
+  padding: 10px;
+  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #342122;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
