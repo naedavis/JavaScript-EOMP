@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YOCO POS</title>
-    <script
-      src="https://kit.fontawesome.com/9d2a1b779d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./styles/home.css" />
-    <link rel="stylesheet" href="./login.html" />
-    <link rel="stylesheet" href="./register.html" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./styles/shop.css" />
+    <script src="./scripts/script.js"></script>
   </head>
   <body>
     <div class="container">
-      <div id="home" class="landing-section">
+      <div class="landing-section">
         <nav class="navbar">
           <div class="logo">
             <img src="./images/image0.png" alt="" />
           </div>
           <ul class="navbar-links">
+            <li class="navbar-link">
+              <a onclick="closeNavbar()" href="home.html" class="navbar-anchor"
+                >Home</a
+              >
+            </li>
             <li class="navbar-link">
               <a onclick="closeNavbar()" href="#about" class="navbar-anchor"
                 >About Us</a
@@ -45,11 +45,6 @@
               >
             </li>
             <li class="navbar-link">
-              <a onclick="closeNavbar()" href="login.html" class="navbar-anchor"
-                >Login</a
-              >
-            </li>
-            <li class="navbar-link">
               <a
                 onclick="closeNavbar()"
                 href="register.html"
@@ -62,30 +57,8 @@
             <i class="fas fa-bars"></i>
           </div>
         </nav>
-        <div class="wrapper">
-          <div class="landing-overlay">
-            <div class="landing-detail">
-              <div class="landing-detail-image">
-                <img src="./images/image4 (2).jpeg" alt="" />
-              </div>
-              <div class="landing-detail-content">
-                <h2>Welcome to <strong>للصعود</strong></h2>
-                <h3>
-                  Shop our wide variety of <strong>High-End</strong> Fashion
-                </h3>
-                <button class="landing-detail-content-btn">REGISTER</button>
-                <button class="landing-detail-content-btn">LOGIN</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wrapper"></div>
-        <div class="wrapper"></div>
-        <div class="wrapper"></div>
-        <div class="wrapper"></div>
       </div>
-      <!--landing-section-->
+      <div></div>
     </div>
-    <!--container -->
   </body>
 </html>

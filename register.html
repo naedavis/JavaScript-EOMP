@@ -12,6 +12,9 @@
     <div class="container">
       <div id="login" class="landing-section">
         <nav class="navbar">
+          <div class="logo">
+            <img src="./images/image0.png" alt="" />
+          </div>
           <ul class="navbar-links">
             <li class="navbar-link">
               <a onclick="closeNavbar()" href="home.html" class="navbar-anchor"
@@ -23,7 +26,7 @@
                 onclick="closeNavbar()"
                 href="#card-machine"
                 class="navbar-anchor"
-                >Card Machines</a
+                >About Us</a
               >
             </li>
             <li class="navbar-link">
@@ -31,7 +34,7 @@
                 onclick="closeNavbar()"
                 href="#online-payment"
                 class="navbar-anchor"
-                >Online Payments</a
+                >Why Online?</a
               >
             </li>
             <li class="navbar-link">
@@ -39,12 +42,7 @@
                 onclick="closeNavbar()"
                 href="#business-tools"
                 class="navbar-anchor"
-                >Business Tools</a
-              >
-            </li>
-            <li class="navbar-link">
-              <a onclick="closeNavbar()" href="#fees" class="navbar-anchor"
-                >Fees</a
+                >Policies</a
               >
             </li>
             <li class="navbar-link">
@@ -53,8 +51,8 @@
               >
             </li>
             <li class="navbar-link">
-              <a onclick="closeNavbar()" href="#sign-up" class="navbar-anchor"
-                >Sign-Up</a
+              <a onclick="closeNavbar()" href="login.html" class="navbar-anchor"
+                >Login</a
               >
             </li>
           </ul>
@@ -63,20 +61,21 @@
           </div>
         </nav>
         <div class="wrapper">
-          <div class="login-overlay">
-            <div class="login-detail">
-              <div class="login-detail-image">
-                <img src="./images/image1 (2).jpeg" alt="" />
+          <div class="register-overlay">
+            <div class="register-detail">
+              <div class="register-detail-image">
+                <img src="./images/image0 (7).jpeg" alt="" />
               </div>
-              <div class="login-detail-content">
+              <div class="register-detail-content">
                 <h2>Register Here</h2>
-                <div class="login-form-container">
-                  <form method="POST" action="">
-                    <input placeholder="name" name="name" type="text" />
-                    <input placeholder="surname" name="surname" type="text" />
-                    <input placeholder="username" name="username" type="text" />
-                    <input placeholder="password" name="password" type="text" />
-                    <button class="register-btn">Register</button>
+                <div class="register-form-container">
+                  <form method="POST" onsubmit="event.preventDefault()">
+                    <input id="first_name" placeholder="name" name="first_name" type="text" />
+                    <input id="last_name" placeholder="surname" name="last_name" type="text" />
+                    <input id="username"placeholder="username" name="username" type="text" />
+                    <input id="password" placeholder="password" name="password" type="password" />
+                    <input id="email" placeholder="email@email.com" name="email" type="email">
+                    <button onclick="registration()" class="register-btn">Register</button>
                     <button class="login-btn">Login</button>
                   </form>
                 </div>

@@ -11,7 +11,9 @@
   background-color: #fffcf2;
   width: 100vw;
   height: 50px;
-  z-index: 1000;
+  z-index: 10;
+  
+
 }
 .navbar-links {
   height: 100%;
@@ -22,10 +24,10 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  gap: 60px;
+  gap: 90px;
   background-color: #fffcf2;
   cursor: pointer;
-  /* border-radius: 10px; */
+
 }
 .navbar-link a {
   font-family: "Poppins", sans-serif;
@@ -51,38 +53,51 @@
 .navbar-menu {
   display: none;
 }
+.logo{
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  z-index: 500;
+  width: 7vw;
+  height: 4px;
+}
+.logo img{
+  
+  font-size: 20px;
+  position: relative;
+  width: 3vw;
+  height: 57px;
+  cursor: pointer;
+}
 
 /* -----------------------LANDING---------------------------- */
-.login-detail{
+.register-detail{
   height: 100vh;
   width: 100%;
   display: grid;
-
 }
-.login-detail-content {
+.register-detail-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px;
   gap: 20px;
 }
-.login-detail-content h2, h3 {
+.register-detail-content h2, h3 {
    color: #a4a4a4;
    /* border-color: rgb(207, 169, 97); */
 }
-.login-detail-content h2{
+.register-detail-content h2{
   font-size: 60px;
 }
 
-.login-detail-image img {
-  /* padding-top: 20px; */
+.register-detail-image img {
   position: absolute;
   object-fit: fill;
   height: 100%;
   width: 100%;
   z-index: -1;
 }
-.login-overlay {
+.register-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -93,7 +108,7 @@
   opacity: 70%;
   background-color: #f0d8b6;  
 }
-.login-form-container form{
+.register-form-container form{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -101,16 +116,16 @@
   color: #a4a4a4;
 
 }
-.login-form-container form input{
+.register-form-container form input{
   padding: 10px;
   font-size: 22px;
   font-family: "Poppins", sans-serif;
-  border: none;
+  border: 1px solid white;
   border-radius: 4px;
   background-color: #c2c1c1;
   color: #403d39;
 }
-.login-form-container form button {
+.register-form-container form button {
   padding: 10px;
   font-size: 21px;
   font-family: "Poppins", sans-serif;
