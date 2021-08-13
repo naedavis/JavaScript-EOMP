@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Here</title>
     <link rel="stylesheet" href="./styles/register.css" />
-    <script src="./scripts/script.js"></script>
+    <!-- <script src="./scripts/script.js"></script> -->
   </head>
   <body>
     <div class="container">
@@ -69,14 +69,39 @@
               <div class="register-detail-content">
                 <h2>Register Here</h2>
                 <div class="register-form-container">
-                  <form method="POST" onsubmit="event.preventDefault()">
-                    <input id="first_name" placeholder="name" name="first_name" type="text" />
-                    <input id="last_name" placeholder="surname" name="last_name" type="text" />
-                    <input id="username"placeholder="username" name="username" type="text" />
-                    <input id="password" placeholder="password" name="password" type="password" />
-                    <input id="email" placeholder="email@email.com" name="email" type="email">
-                    <button onclick="registration()" class="register-btn">Register</button>
-                    <button class="login-btn">Login</button>
+                  <form id="register-form" class="registration-form">
+                    <input
+                      id="first_name"
+                      placeholder="name"
+                      name="first_name"
+                      type="text"
+                    />
+                    <input
+                      id="last_name"
+                      placeholder="surname"
+                      name="last_name"
+                      type="text"
+                    />
+                    <input
+                      id="username"
+                      placeholder="username"
+                      name="username"
+                      type="text"
+                    />
+                    <input
+                      id="password"
+                      placeholder="password"
+                      name="password"
+                      type="password"
+                    />
+                    <input
+                      id="email"
+                      placeholder="email@email.com"
+                      name="email"
+                      type="email"
+                    />
+                    <button class="register-btn" type="submit">Register</button>
+                    <button class="login-btn" type="button">Login</button>
                   </form>
                 </div>
               </div>
@@ -88,5 +113,7 @@
       <!--login-section-->
     </div>
     <!--container -->
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

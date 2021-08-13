@@ -1,4 +1,3 @@
-
 function login() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
@@ -27,31 +26,38 @@ function login() {
     });
 }
 
-function registration(){
+
+document.getElementById("register-form").addEventListener("submit", function (event) {
+  event.preventDefault();
   const first_name = document.getElementById("first_name").value;
   const last_name = document.getElementById("last_name").value;
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
-  console.log(first_name);
-  console.log(last_name);
-  console.log(username);
-  console.log(password);
-  fetch("https://flask-eomp.herokuapp.com/registration/", {
+  const email = document.getElementById("email").value;
+
+  fetch("http://127.0.0.1:5000/registration/", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
     body: JSON.stringify({
       first_name: first_name,
       last_name: last_name,
       username: username,
       password: password,
+      email: email,
     }),
+    headers: {
+      "Content-Type": "application/json",
+    },
   })
-    .then((response) => response.json())
-    .then((data) => {
-     window.location.href = "login.html";
+    .then(function (response) {
+      if (response.status < 400 && response.status >= 200) {
+        // register was successfull
+        console.log("response", response);
+        // do redirect to login screen
+        // window.location.href = "./payment.html"
+      }
+    })
+    .catch(function (error) {
+      console.log("there was error with registering");
+      console.log("error", error);
     });
-}
-
-
+});
