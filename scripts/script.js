@@ -1,3 +1,5 @@
+
+// LOGIN FUNCTION 
 function login() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
@@ -21,12 +23,13 @@ function login() {
         myStorage.setItem("jwt-token", data["access_token"]);
         myStorage.setItem("username", username);
         myStorage.setItem("password", password);
-        window.location.href = "./home.html";
+        window.location.href = "shop.html";
       }
     });
 }
 
 
+// REGISTER FUNCTION
 document.getElementById("register-form").addEventListener("submit", function (event) {
   event.preventDefault();
   const first_name = document.getElementById("first_name").value;
@@ -35,7 +38,7 @@ document.getElementById("register-form").addEventListener("submit", function (ev
   const password = document.getElementById("password").value;
   const email = document.getElementById("email").value;
 
-  fetch("http://127.0.0.1:5000/registration/", {
+  fetch("https://flask-eomp.herokuapp.com/registration/", {
     method: "POST",
     body: JSON.stringify({
       first_name: first_name,

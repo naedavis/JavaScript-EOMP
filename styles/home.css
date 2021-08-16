@@ -58,14 +58,14 @@
   grid-template-columns: 1fr 1fr;
   z-index: 500;
   width: 7vw;
-  height: 4px;
+  height: 3px;
 }
 .logo img{
   
   font-size: 20px;
   position: relative;
-  width: 3vw;
-  height: 57px;
+  width: 4vw;
+  height: 54px;
   cursor: pointer;
 }
 
@@ -107,23 +107,29 @@
   color: white;
   cursor: pointer;
 }
-.landing-detail-content-btn button{
-  
-}
 
 .landing-detail-content-btn:hover{
   background-color: white ;
   color: #342122;
 }
 
-.landing-detail-image img {
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* .landing-detail-image img {
   /* padding-top: 20px; */
-  position: absolute;
+  /* position: absolute;
   object-fit: fill;
   height: 100%;
   width: 100%;
-  z-index: -1;
-}
+   */
+/* }  */
 .landing-overlay {
   position: absolute;
   top: 0;

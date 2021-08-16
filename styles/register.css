@@ -58,14 +58,14 @@
   grid-template-columns: 1fr 1fr;
   z-index: 500;
   width: 7vw;
-  height: 4px;
+  height: 3px;
 }
 .logo img{
   
   font-size: 20px;
   position: relative;
-  width: 3vw;
-  height: 57px;
+  width: 4vw;
+  height: 54px;
   cursor: pointer;
 }
 
