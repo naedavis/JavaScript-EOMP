@@ -56,7 +56,7 @@ document.getElementById("register-form").addEventListener("submit", function (ev
         // register was successfull
         console.log("response", response);
         // do redirect to login screen
-        // window.location.href = "./payment.html"
+        window.location.href = "./login.html"
       }
     })
     .catch(function (error) {

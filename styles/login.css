@@ -76,6 +76,9 @@
   display: grid;
 
 }
+.login-username{
+  color: black;
+}
 .login-detail-content {
   display: flex;
   flex-direction: column;
@@ -149,6 +152,7 @@
   font-family: "Poppins", sans-serif;
   color: white;
   background-color: #342122;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
